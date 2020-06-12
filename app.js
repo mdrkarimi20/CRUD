@@ -43,6 +43,11 @@
 
       });
 
+      $(".clear").on("click", function() {
+          $("input[type=text]").val("");
+          $("#tbody tr").remove();
+      });
+
       $(document).ready(function() {
           $('.error').hide();
           $('#submit').click(function() {
